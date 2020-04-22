@@ -53,11 +53,11 @@ const pets = [
 
    for (let i = 0; i < pets.length; i++) {
      domString += '<div class="petCard">';
-     domString += `<h3>${pets[i].name}</h3>`;
+     domString += `<h3 class="nameH3">${pets[i].name}</h3>`;
      domString += `<img src="${pets[i].image}" alt="${pets[i].typeOfPet}">`;
      domString += `<h4>${pets[i].color}</h4>`;
      domString += `<p>${pets[i].name}'s special skill is: ${pets[i].specialSkill}</p>`;
-     domString += `<h3>${pets[i].typeOfPet}</h3>`;
+     domString += `<h3 class="${pets[i].typeOfPet}">${pets[i].typeOfPet}</h3>`;
      domString += '</div>'
   }
   printsToDom('#petContainer', domString);
