@@ -1,3 +1,52 @@
 body {
-  background-color: darkseagreen;
+  background-color: #3d3d3d;
+  text-align: center
+}
+
+h1 {
+  color: white;
+}
+
+#petContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.petCard {
+  background-color:white;
+  text-align: center;
+  border: 1px solid dimgrey;
+  margin: 10px;
+}
+
+.nameH3 {
+  color: white;
+  background-color: #1976D2;
+  padding: 9px 0px;
+  margin: 0px;
+}
+
+.Lizard {
+  color: #757575;
+  align-content: center;
+  background-color: #9dff83;
+  margin: 0px;
+  padding: 15px 0px 15px 0px;
+}
+
+.Hamster {
+  color: #757575;
+  align-content: center;
+  background-color: #fcf08d;
+  margin: 0px;
+  padding: 15px 0px 15px 0px;
+}
+.Fish {
+  color: #757575;
+  align-content: center;
+  background-color: #ffc49c;
+  margin: 0px;
+  padding: 15px 0px 15px 0px;
 }
