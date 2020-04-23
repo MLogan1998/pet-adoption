@@ -15,7 +15,7 @@ const pets = [
   },
   {
     image: 'https://i.postimg.cc/x8xntyv0/hairyfinal.jpg',
-    name: 'Hairy',
+    name: 'Harry',
     color: 'Tan',
     specialSkill: 'Gardening',
     typeOfPet: 'Hamster'
@@ -52,7 +52,7 @@ const pets = [
    let domString = '';
 
    for (let i = 0; i < pets.length; i++) {
-     domString += '<div class="petCard">';
+     domString += `<div class="${pets[i].typeOfPet}" id="petCard">`;
      domString += `<h3 class="nameH3">${pets[i].name}</h3>`;
      domString += `<img src="${pets[i].image}" alt="${pets[i].typeOfPet}">`;
      domString += `<h4>${pets[i].color}</h4>`;
@@ -67,4 +67,28 @@ const pets = [
    buildPetCards();
  }
 
- init();
+init();
+
+$("#lizButton").click(function(){
+  $(".Lizard").show();
+  $(".Hamster").hide();
+  $(".Fish").hide();
+})
+
+$("#allButton").click(function(){
+  $(".Hamster").show();
+  $(".Fish").show();
+  $(".Lizard").show();
+})
+
+$("#fishButton").click(function(){
+  $(".Lizard").hide();
+  $(".Hamster").hide();
+  $(".Fish").show();
+})
+
+$("#hamButton").click(function(){
+  $(".Fish").hide();
+  $(".Hamster").show();
+  $(".Lizard").hide();
+})
