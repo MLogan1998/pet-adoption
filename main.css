@@ -1,27 +1,59 @@
 body {
   background-color: #3d3d3d;
-  text-align: center
+  text-align: center;
+  margin: 0 auto;
 }
-
 h1 {
   color: white;
   font-family: 'Archivo Black', sans-serif;
 }
-
+.buttons {
+  margin: 0px 0px 15px 0px;
+  
+}
+.textButton {
+  margin: 8px;
+  border: none;
+  text-decoration: none;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: bold;
+  color: #757575;;
+  padding: 1em;
+}
+#lizButton {
+  background-color: #9dff83;
+}
+#lizButton:hover {
+  background-color: #c7fcb9;
+}
+#hamButton {
+  background-color: #fcf08d;
+}
+#hamButton:hover {
+  background-color: #faf3bb;
+}
+#fishButton {
+  background-color: #ffc49c;
+}
+#fishButton:hover {
+  background-color: #fcd3b8;
+}
+#allButton {
+  background-color: #1976D2;
+  color: white;
+}
 #petContainer {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .petCard {
   background-color:white;
   text-align: center;
   border: 2px solid dimgrey;
   margin: 10px;
 }
-
 .nameH3 {
   color: white;
   background-color: #1976D2;
@@ -29,12 +61,10 @@ h1 {
   margin: 0px;
   font-family: 'Fjalla One', sans-serif;
 }
-
 h4 {
   font-family: 'Viga', sans-serif;
   margin: 15px 0px 5px 0px;
 }
-
 p  {
   margin: 0px 0px 15px 0px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -47,7 +77,6 @@ p  {
   padding: 15px 0px 15px 0px;
   font-family: 'Fjalla One', sans-serif;
 }
-
 .Hamster {
   color: #757575;
   align-content: center;
