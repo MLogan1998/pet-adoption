@@ -5,6 +5,7 @@ body {
 
 h1 {
   color: white;
+  font-family: 'Archivo Black', sans-serif;
 }
 
 #petContainer {
@@ -17,7 +18,7 @@ h1 {
 .petCard {
   background-color:white;
   text-align: center;
-  border: 1px solid dimgrey;
+  border: 2px solid dimgrey;
   margin: 10px;
 }
 
@@ -26,14 +27,25 @@ h1 {
   background-color: #1976D2;
   padding: 9px 0px;
   margin: 0px;
+  font-family: 'Fjalla One', sans-serif;
 }
 
+h4 {
+  font-family: 'Viga', sans-serif;
+  margin: 15px 0px 5px 0px;
+}
+
+p  {
+  margin: 0px 0px 15px 0px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
 .Lizard {
   color: #757575;
   align-content: center;
   background-color: #9dff83;
   margin: 0px;
   padding: 15px 0px 15px 0px;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 .Hamster {
@@ -42,6 +54,7 @@ h1 {
   background-color: #fcf08d;
   margin: 0px;
   padding: 15px 0px 15px 0px;
+  font-family: 'Fjalla One', sans-serif;
 }
 .Fish {
   color: #757575;
@@ -49,4 +62,5 @@ h1 {
   background-color: #ffc49c;
   margin: 0px;
   padding: 15px 0px 15px 0px;
+  font-family: 'Fjalla One', sans-serif;
 }
