@@ -63,32 +63,39 @@ const pets = [
   printsToDom('#petContainer', domString);
  }
 
+const setDisplay = (className, displayValue) => {
+  var items = document.getElementsByClassName(className);
+  for (let i = 0; i < items.length; i++) {
+    items[i].style.display = displayValue;
+  }
+}
+
+lizDisplay = () => {
+  setDisplay('Lizard', 'block');
+  setDisplay('Hamster', 'none');
+  setDisplay('Fish', 'none');
+}
+
+fishDisplay = () => {
+  setDisplay('Lizard', 'none');
+  setDisplay('Hamster', 'none');
+  setDisplay('Fish', 'block');
+}
+
+hamDisplay = () => {
+  setDisplay('Lizard', 'none');
+  setDisplay('Hamster', 'block');
+  setDisplay('Fish', 'none');
+}
+
+allDisplay = () => {
+  setDisplay('Lizard', 'block');
+  setDisplay('Hamster', 'block');
+  setDisplay('Fish', 'block');
+}
+
  const init = () => {
    buildPetCards();
  }
 
 init();
-
-$("#lizButton").click(function(){
-  $(".Lizard").show();
-  $(".Hamster").hide();
-  $(".Fish").hide();
-})
-
-$("#allButton").click(function(){
-  $(".Hamster").show();
-  $(".Fish").show();
-  $(".Lizard").show();
-})
-
-$("#fishButton").click(function(){
-  $(".Lizard").hide();
-  $(".Hamster").hide();
-  $(".Fish").show();
-})
-
-$("#hamButton").click(function(){
-  $(".Fish").hide();
-  $(".Hamster").show();
-  $(".Lizard").hide();
-})
