@@ -52,7 +52,7 @@ const pets = [
    let domString = '';
 
    for (let i = 0; i < pets.length; i++) {
-     domString += `<div class="${pets[i].typeOfPet}" id="petCard">`;
+     domString += `<div class="${pets[i].typeOfPet}">`;
      domString += `<h3 class="nameH3">${pets[i].name}</h3>`;
      domString += `<img src="${pets[i].image}" alt="${pets[i].typeOfPet}">`;
      domString += `<h4>${pets[i].color}</h4>`;

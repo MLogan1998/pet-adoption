@@ -42,7 +42,7 @@ button:hover {
   margin: 0 auto;
   justify-content: center;
 }
-#petCard {
+#petContainer > div {
   background-color:white;
   text-align: center;
   border: 2px solid dimgrey;
