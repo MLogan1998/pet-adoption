@@ -32,7 +32,7 @@ button:hover {
   background-color: #fcf08d;
 }
 .allButton{
-  background-color: #1976D2;
+  background-color: #b44552;
   color: white;
 }
 #petContainer {
@@ -51,7 +51,7 @@ button:hover {
 }
 .nameH3 {
   color: white;
-  background-color: #1976D2;
+  background-color: #b44552;
   padding: 15px 0px;
   margin: 0px;
   font-family: 'Fjalla One', sans-serif;
